@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Estado4">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TimePicker
+            android:id="@+id/hora2"
+            android:layout_width="271dp"
+            android:layout_height="351dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:headerBackground="@color/colorAccent"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horita4"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btnApagar"
+            android:layout_width="76dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="8dp"
+            android:background="#3F51B5"
+            android:src="@mipmap/ic_access_time_white_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hora2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription"
+            tools:src="@android:drawable/btn_dialog" />
+
+        <ImageButton
+            android:id="@+id/ib_obtener_hora3"
+            android:layout_width="76dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FF5722"
+            android:src="@mipmap/ic_access_time_white_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnApagar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hora2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/horita4"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:text="Establecer la alarma"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/barraVolumen" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="81dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Establecer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.623"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ib_obtener_hora3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="128dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Presione aqui para apagar alarma"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ib_obtener_hora3"
+            app:layout_constraintTop_toBottomOf="@+id/btnApagar"
+            app:layout_constraintVertical_bias="0.110000014" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

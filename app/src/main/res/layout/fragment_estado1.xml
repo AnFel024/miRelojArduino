@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Estado1">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/horita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Ingrese la hora a ingresar en el dispositivo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.585"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_obtener_hora"
+            android:layout_width="52dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FF5722"
+            android:src="@mipmap/ic_access_time_white_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toEndOf="@+id/hora"
+            app:layout_constraintTop_toBottomOf="@+id/horita"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/ib_obtener_fecha"
+            android:layout_width="52dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="8dp"
+            android:background="#F44336"
+            android:src="@mipmap/ic_event_white_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toEndOf="@+id/txtFecha"
+            app:layout_constraintTop_toBottomOf="@+id/ib_obtener_hora"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/establecerHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#FF9800"
+            android:text="Establecer"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ib_obtener_fecha"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="181dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="8dp"
+            android:background="#F44336"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="80px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hora" />
+
+        <TextView
+            android:id="@+id/hora"
+            android:layout_width="181dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="68dp"
+            android:background="#FF5722"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="80px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horita" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Fijar hora"
+            app:layout_constraintBottom_toTopOf="@+id/ib_obtener_fecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintStart_toEndOf="@+id/hora"
+            app:layout_constraintTop_toBottomOf="@+id/ib_obtener_hora"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Fijar fecha"
+            app:layout_constraintBottom_toTopOf="@+id/establecerHora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/txtFecha"
+            app:layout_constraintTop_toBottomOf="@+id/ib_obtener_fecha"
+            app:layout_constraintVertical_bias="0.02" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

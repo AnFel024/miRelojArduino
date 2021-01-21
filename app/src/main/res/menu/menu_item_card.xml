@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btn_hora"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="@string/menu_hora" />
+    <item
+        android:id="@+id/btn_luces"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/menu_luces" />
+
+    <item
+        android:id="@+id/btn_tono"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/menu_tono" />
+
+    <item
+        android:id="@+id/btn_alarma"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="@string/menu_alarma" />
+
+</menu>

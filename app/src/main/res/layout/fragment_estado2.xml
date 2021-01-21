@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estado2">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/horita2"
+            android:layout_width="179dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="¿Que color quiere en la lampara?"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="171dp"
+            android:layout_height="212dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horita2">
+
+
+            <RadioButton
+                android:id="@+id/luzBlanca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="APAGAR LUZ" />
+
+            <RadioButton
+                android:id="@+id/luzAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AZUL" />
+
+            <RadioButton
+                android:id="@+id/luzRoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ROJO" />
+
+            <RadioButton
+                android:id="@+id/luzVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VERDE"
+                app:layout_constraintEnd_toEndOf="@+id/luzBlanca"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <RadioButton
+                android:id="@+id/luzTodas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TODAS"
+                app:layout_constraintEnd_toEndOf="@+id/luzBlanca"
+                tools:layout_editor_absoluteY="0dp" />
+        </RadioGroup>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
